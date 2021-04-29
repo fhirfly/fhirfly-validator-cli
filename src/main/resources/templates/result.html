@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>HL7 Validator Results</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <p th:text="'Validating File Name: , ' + ${fileName} + '!'" />
+    <p th:text="'IG: , ' + ${ig} + '!'" />
+    <p th:text="'FHIR Version: , ' + ${fhirVersion} + '!'" />
+    <p th:text="'Validation Results: , ' + ${results} + '!'" />
+</body>
+</html>

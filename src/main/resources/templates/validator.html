@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>HL7 Validator</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <form action="#" th:action="@{/validator}" th:object="${validator}" method="post">
+    	<p>IG: <input type="radio" th:field="*{ig}" /></p>
+        <p>FHIR Version: <input type="radio" th:field="*{fhirVersion}" /></p>
+        <p>Local File: </p>
+        <p><input type="submit" value="Validate" /></p>
+    </form>
+</body>
+</html>
